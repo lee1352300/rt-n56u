@@ -2,7 +2,7 @@
 /* 360P2 */
 
 #define BOARD_PID		"LTE"
-#define BOARD_NAME		"Lte Router"
+#define BOARD_NAME		"Lte-Router"
 #define BOARD_DESC		"Lte Wireless Router"
 #define BOARD_VENDOR_NAME	"3COM"
 #define BOARD_VENDOR_URL	"http://www.hpe.com"
