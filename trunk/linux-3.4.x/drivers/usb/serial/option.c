@@ -2182,12 +2182,8 @@ static bool is_blacklisted(const u8 ifnum, enum option_blacklist_reason reason,
 static int option_probe(struct usb_serial *serial,
 			const struct usb_device_id *id)
 {
-	struct usb_wwan_intf_private *data;
-	struct option_private *priv;
-	struct usb_interface_descriptor *iface_desc =
-				&serial->interface->cur_altsetting->desc;
-	struct usb_device_descriptor *dev_desc = &serial->dev->descriptor;
-
+	struct usb_wwan_intf_private *data;	
+	
 	/* YUGA CLM920 AC3 */
 	if (serial->dev->descriptor.idVendor == YUGA_VENDOR_AC3 && 
 	    	serial->dev->descriptor.idProduct == YUGA_PRODUCT_AC3) {
@@ -2195,6 +2191,11 @@ static int option_probe(struct usb_serial *serial,
 		    || serial->interface->cur_altsetting-desc_bInterfaceNumber == 1)
 		return -ENODEV;
 	}
+	
+	struct option_private *priv;
+	struct usb_interface_descriptor *iface_desc =
+				&serial->interface->cur_altsetting->desc;
+	struct usb_device_descriptor *dev_desc = &serial->dev->descriptor;
 	
 	/* Never bind to the CD-Rom emulation interface	*/
 	if (iface_desc->bInterfaceClass == 0x08)
