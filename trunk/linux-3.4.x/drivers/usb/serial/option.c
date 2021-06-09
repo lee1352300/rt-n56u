@@ -2192,6 +2192,7 @@ static int option_probe(struct usb_serial *serial,
 	if (serial->dev->descriptor.idVendor == YUGA_VENDOR_AC3 && serial->dev->descriptor.idProduct == YUGA_PRODUCT_AC3) {
 		if (serial->interface->cur_altsetting->desc.bInterfaceNumber == 0 || serial->interface->cur_altsettig-desc_bInterfaceNumber == 1)
 		return -ENODEV;
+	}
 		
 	/* Never bind to the CD-Rom emulation interface	*/
 	if (iface_desc->bInterfaceClass == 0x08)
