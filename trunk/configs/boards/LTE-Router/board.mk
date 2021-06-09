@@ -4,5 +4,5 @@
 # 360P2     # 360P2                  # MT7628  #
 ##################################################################
 
-CFLAGS += -DBOARD_4GRouter
+CFLAGS += -DBOARD_LTE
 BOARD_NUM_USB_PORTS=1
