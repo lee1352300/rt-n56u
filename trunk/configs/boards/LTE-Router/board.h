@@ -5,8 +5,8 @@
 #define BOARD_NAME		"Lte Router"
 #define BOARD_DESC		"Lte Wireless Router"
 #define BOARD_VENDOR_NAME	"3COM"
-#define BOARD_VENDOR_URL	""
-#define BOARD_MODEL_URL		""
+#define BOARD_VENDOR_URL	"http://www.hpe.com"
+#define BOARD_MODEL_URL		"http://www.hpe.com"
 #define BOARD_BOOT_TIME		20
 #define BOARD_FLASH_TIME		120
 #define BOARD_GPIO_BTN_RESET	38
