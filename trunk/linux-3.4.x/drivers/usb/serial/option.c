@@ -51,10 +51,9 @@ static int option_send_setup(struct usb_serial_port *port);
 static void option_instat_callback(struct urb *urb);
 
 
-/* YUGE CLM920 AC3 
+/* YUGE CLM920 AC3 */
 #define YUGA_VENDOR_AC3				0x1286
 #define YUGA_PRODUCT_AC3			0x4E3C
-*/
 
 /* Vendor and product IDs */
 #define OPTION_VENDOR_ID			0x0AF0
@@ -717,7 +716,7 @@ static const struct option_blacklist_info yuga_clm920_nc5_blacklist = {
 };
 
 static const struct usb_device_id option_ids[] = {
-	/* { USB_DEVICE(YUGA_VENDOR_AC3, YUGA_PRODUCT_AC3) }, */
+	{ USB_DEVICE(YUGA_VENDOR_AC3, YUGA_PRODUCT_AC3) }, 
 	{ USB_DEVICE(OPTION_VENDOR_ID, OPTION_PRODUCT_COLT) },
 	{ USB_DEVICE(OPTION_VENDOR_ID, OPTION_PRODUCT_RICOLA) },
 	{ USB_DEVICE(OPTION_VENDOR_ID, OPTION_PRODUCT_RICOLA_LIGHT) },
@@ -2184,16 +2183,6 @@ static int option_probe(struct usb_serial *serial,
 			const struct usb_device_id *id)
 {
 	struct usb_wwan_intf_private *data;	
-	
-	/* YUGA CLM920 AC3 
-	if (serial->dev->descriptor.idVendor == YUGA_VENDOR_AC3 && 
-	    	serial->dev->descriptor.idProduct == YUGA_PRODUCT_AC3) {
-		if (serial->interface->cur_altsetting->desc.bInterfaceNumber == 0
-		    || serial->interface->cur_altsetting-desc_bInterfaceNumber == 1)
-		return -ENODEV;
-	}
-	*/
-	
 	struct option_private *priv;
 	struct usb_interface_descriptor *iface_desc =
 				&serial->interface->cur_altsetting->desc;
@@ -2202,7 +2191,6 @@ static int option_probe(struct usb_serial *serial,
 	/* Never bind to the CD-Rom emulation interface	*/
 	if (iface_desc->bInterfaceClass == 0x08)
 		return -ENODEV;
-
 	/*
 	 * Don't bind reserved interfaces (like network ones) which often have
 	 * the same class/subclass/protocol as the serial interfaces.  Look at
