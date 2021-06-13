@@ -51,7 +51,7 @@ static int option_send_setup(struct usb_serial_port *port);
 static void option_instat_callback(struct urb *urb);
 
 
-/* YUGE CLM920 AC3 */
+/* YUGE CLM920_AC3 */
 #define YUGA_VENDOR_AC3				0x1286
 #define YUGA_PRODUCT_AC3			0x4E3C
 
