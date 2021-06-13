@@ -35,8 +35,8 @@
 #define DEF_LAN_DHCP_END	"192.168.2.199"
 #define DEF_LAN_MASK		"255.255.255.0"
 
-#define DEF_WLAN_2G_CC		"CH"
-#define DEF_WLAN_5G_CC		"CH"
+#define DEF_WLAN_2G_CC		"CN"
+#define DEF_WLAN_5G_CC		"US"
 #define DEF_WLAN_2G_SSID	BOARD_PID "_%s"
 #define DEF_WLAN_5G_SSID	BOARD_PID "_5G_%s"
 #define DEF_WLAN_2G_GSSID	BOARD_PID "_GUEST_%s"
@@ -46,7 +46,7 @@
 
 #define DEF_ROOT_PASSWORD	"admin"
 #define DEF_SMB_WORKGROUP	"WORKGROUP"
-#define DEF_TIMEZONE		"CST-7"
+#define DEF_TIMEZONE		"CST-8"
 #define DEF_NTP_SERVER0		"time.windows.com"
 #define DEF_NTP_SERVER1		"time.nist.gov"
 #ifdef SUPPORT_OPENSSL_EC
