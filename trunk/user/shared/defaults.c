@@ -588,10 +588,10 @@ struct nvram_pair router_defaults[] = {
 	{ "dhcp_start", DEF_LAN_DHCP_BEG },	/* First assignable DHCP address */
 	{ "dhcp_end", DEF_LAN_DHCP_END },	/* Last assignable DHCP address */
 	{ "dhcp_enable_x", "1" },
-	{ "dhcp_lease", "86400" },
+	{ "dhcp_lease", "7200" },
 	{ "dhcp_gateway_x", "" },
-	{ "dhcp_dns1_x", "" },
-	{ "dhcp_dns2_x", "" },
+	{ "dhcp_dns1_x", "9.9.9.9" },
+	{ "dhcp_dns2_x", "8.8.8.8" },
 	{ "dhcp_dns3_x", "" },
 	{ "dhcp_dnsv6_x", "" },
 	{ "dhcp_wins_x", "" },
