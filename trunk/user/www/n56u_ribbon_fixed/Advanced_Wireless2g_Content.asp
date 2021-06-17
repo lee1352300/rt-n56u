@@ -573,7 +573,8 @@ function validate_wlphrase(s, v, obj){
                                                     <option value="AU" <% nvram_match_x("", "rt_country_code", "AU","selected"); %>>Australia (channels 1-13)</option>
                                                     <option value="GB" <% nvram_match_x("", "rt_country_code", "GB","selected"); %>>Europe (channels 1-13)</option>
                                                     <option value="RU" <% nvram_match_x("", "rt_country_code", "RU","selected"); %>>Russia (channels 1-13)</option>
-                                                    <option value="DB" <% nvram_match_x("", "rt_country_code", "DB","selected"); %>>Debug (all channels)</option>
+                                                    <option value="CH" <% nvram_match_x("", "rt_country_code", "CH","selected"); %>>Switzerland (channels 1-13)</option>
+						    <!-- <option value="DB" <% nvram_match_x("", "rt_country_code", "DB","selected"); %>>Debug (all channels)</option> -->
                                                 </select>
                                             </td>
                                         </tr>
