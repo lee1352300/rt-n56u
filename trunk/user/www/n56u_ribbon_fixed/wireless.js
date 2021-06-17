@@ -548,7 +548,6 @@ function insertChannelOption() {
         country == "ZA" ||
         country == "ES" ||
         country == "SE" ||
-        country == "CH" ||
         country == "GB" ||
         country == "UZ")
         channels = new Array(0, 36, 40, 44, 48); //Region 1
@@ -586,6 +585,9 @@ function insertChannelOption() {
 
     else if (country == "JP")
         channels = new Array(0, 36, 40, 44, 48); //Region 9
+	
+    else if (country == "CH")
+        channels = new Array(0, 36, 40, 44, 48, 52, 56, 60, 64, 100, 104, 108, 112, 116, 120, 124, 128, 132, 136, 140); //Region 1
 
     else
         channels = new Array(0, 36, 40, 44, 48, 52, 56, 60, 64, 100, 104, 108, 112, 116, 120, 124, 128, 132, 136, 140, 149, 153, 157, 161, 165); //Region 7
