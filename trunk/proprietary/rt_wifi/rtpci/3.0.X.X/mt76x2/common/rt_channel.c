@@ -193,9 +193,15 @@ CH_DESC Country_Region0_ChDesc_5GHZ[] =
 	{}
 };
 
-CH_DESC Country_Region1_ChDesc_5GHZ[] =
+/* CH_DESC Country_Region1_ChDesc_5GHZ[] =
 {
 	{36, 4, CHANNEL_DEFAULT_PROP},
+	{}
+}; */
+CH_DESC Country_Region1_ChDesc_5GHZ[] =
+{
+	{36, 8, CHANNEL_DEFAULT_PROP},
+	{100, 11, CHANNEL_DEFAULT_PROP},
 	{}
 };
 
