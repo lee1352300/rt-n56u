@@ -31,7 +31,7 @@ opengt
  if a=0 goto error
  if a>32 goto error
 
- send "AT+CGDCONT=1,\"IP\",\""+$x+"\"^m"
+ send "AT+CGDCONT=1,\"IPV4V6\",\""+$x+"\"^m"
  waitfor 20 "OK","ERR"
  if % = -1 goto timeerror
  if % = 0 goto OK
