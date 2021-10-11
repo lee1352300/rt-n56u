@@ -193,9 +193,18 @@ CH_DESC Country_Region0_ChDesc_5GHZ[] =
 	{}
 };
 
+/*
 CH_DESC Country_Region1_ChDesc_5GHZ[] =
 {
 	{36, 4, CHANNEL_DEFAULT_PROP},
+	{}
+};
+*/
+
+CH_DESC Country_Region1_ChDesc_5GHZ[] =
+{
+	{36, 8, CHANNEL_DEFAULT_PROP},
+	{100, 11, CHANNEL_DEFAULT_PROP},
 	{}
 };
 
@@ -1324,8 +1333,8 @@ CH_DESP Country_CH_ChDesp[] =
 	{ 36,   4, 20, IDOR, FALSE},	/*5170~5250MHz, Ch 36~48, Max BW: 40 */  
 //	{ 52,   4, 20, IDOR, TRUE}, 	/*5250~5330MHz, Ch 52~64, Max BW: 40 */     		
 //	{ 100, 11, 27, BOTH, TRUE}, 	/*5490~5710MHz, Ch 100~140, Max BW: 40 */
-	{ 52,   4, 20, IDOR, FALSE}, 	/*5250~5330MHz, Ch 52~64, Max BW: 40 */     	
-	{ 100, 11, 27, BOTH, FALSE}, 	/*5490~5710MHz, Ch 100~140, Max BW: 40 */		
+	{ 52,   4, 23, BOTH, TRUE}, 	/*5250~5330MHz, Ch 52~64, Max BW: 40 */     		
+	{ 100, 11, 27, BOTH, TRUE}, 	/*5490~5710MHz, Ch 100~140, Max BW: 40 */	
 	{ 0},               	    	/* end*/
 };
 /*Syrian Arab Republic*/		
