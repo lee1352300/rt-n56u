@@ -4,5 +4,5 @@
 # LTE     # LTE                  # MT7628  #
 ##################################################################
 
-CFLAGS += -DBOARD_LTE
+CFLAGS += -DBOARD_Cisco
 BOARD_NUM_USB_PORTS=1
