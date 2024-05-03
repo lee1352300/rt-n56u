@@ -1,7 +1,7 @@
 
 /* 360P2 */
 
-#define BOARD_PID		"LTE"
+#define BOARD_PID		"Cisco"
 #define BOARD_NAME		"LTE-Router"
 #define BOARD_DESC		"LTE Wireless Router"
 #define BOARD_VENDOR_NAME	"Cisco"
