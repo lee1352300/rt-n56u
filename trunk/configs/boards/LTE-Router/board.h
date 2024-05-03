@@ -4,9 +4,9 @@
 #define BOARD_PID		"LTE"
 #define BOARD_NAME		"LTE-Router"
 #define BOARD_DESC		"LTE Wireless Router"
-#define BOARD_VENDOR_NAME	"3COM"
-#define BOARD_VENDOR_URL	"http://www.hpe.com"
-#define BOARD_MODEL_URL		"http://www.hpe.com"
+#define BOARD_VENDOR_NAME	"Cisco"
+#define BOARD_VENDOR_URL	"http://www.cisco.com"
+#define BOARD_MODEL_URL		"http://www.cisco.com"
 #define BOARD_BOOT_TIME		20
 #define BOARD_FLASH_TIME		120
 #define BOARD_GPIO_BTN_RESET	38
@@ -30,6 +30,3 @@
 #define BOARD_NUM_ETH_LEDS	1
 #define BOARD_HAS_EPHY_L1000	0
 #define BOARD_HAS_EPHY_W1000	0
-#define  BOARD_GPIO_LED_ROUTER1	43
-#define  BOARD_GPIO_LED_ROUTER2	42
-#define  BOARD_GPIO_LED_ROUTER3	18
